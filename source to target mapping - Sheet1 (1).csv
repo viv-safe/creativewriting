@@ -1,0 +1,6 @@
+Source Database: Field Name,Data Type,Data Length,Target App Layer: Field Name,Data Type,Data Length,Field Description,Sanple Value,Sample Formatting on UI (read),"Sample Formatting on UI (write, edit)",Transformations,,Data Classification,Schema
+Name,string,50,fname,alphanumeric,20,First name,James,James,James,Extract from left before comma separator,,,
+Name,string,50,lname,alphanumeric,20,Last name,Baldwin,Baldwin,Baldwin,Extract from right after comma separator,,,
+Name,string,50,mname,alphanumeric,20,Middle Name,Abracadabra,A,Arthur,Extract everything between the first and last comma separator. ,,,
+Phone,numeric,9,mobile,integer,15,"Cellphone number of customer including country code, area code, and phone number",123011234567890,62 (01) 123-456-7890,062 (01) 123-456-7890,"Combine codes for country, area, and exchange.",,Phone/Customer,enum
+PH1,alphanumeric,13,mobile,integer,15,Cellphone number of employee in the Customer Service role,123011234567890,62 (01) 123-456-7890,062 (01) 123-456-7890,"Combine codes for country, area, and exchange.",,Phone/InternalUser/CustomerService,enum
